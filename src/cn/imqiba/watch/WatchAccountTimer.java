@@ -63,7 +63,7 @@ public class WatchAccountTimer extends TimerTask
 				
 				try
 				{
-					Class.forName("org.postgresql.Driver");
+					Class.forName("com.mysql.jdbc.Driver");
 					
 					conn = DriverManager.getConnection(dbUri, dbUser, dbPasswd);
 					stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
@@ -118,7 +118,7 @@ public class WatchAccountTimer extends TimerTask
 				
 				try
 				{
-					Class.forName("org.postgresql.Driver");
+					Class.forName("com.mysql.jdbc.Driver");
 					
 					conn = DriverManager.getConnection(dbUri, dbUser, dbPasswd);
 					stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
